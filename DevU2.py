@@ -93,21 +93,52 @@
 
 # A Python program to print all 
 # permutations using library function
-from itertools import permutations
-from itertools import combinations
-count=0
-str2=input("Enter string:")
-list1=list(str2)
-perm =permutations(list1)
-comb=combinations(list1,2)
-for i in perm:
-    count+=1
-    print (''.join(i))
-print("permutations count:",count)
+##from itertools import permutations
+##from itertools import combinations
+##count=0
+##str2=input("Enter string:")
+##list1=list(str2)
+##perm =permutations(list1)
+##comb=combinations(list1,2)
+##for i in perm:
+##    count+=1
+##    print (''.join(i))
+##print("permutations count:",count)
+##
+##count=0
+##for i in comb:
+##    
+##    count+=1
+##    print (''.join(i))
+##print("combinations count:",count)
 
-count=0
-for i in comb:
-    
-    count+=1
-    print (''.join(i))
-print("combinations count:",count)
+#Anagram string
+#First Method:
+##def anagram(str1,str2):
+##    flag=0
+##    len1=len(str1)
+##    len2=len(str2)
+##    if(len1==len2):
+##        for i in str1:
+##            if i in str2:
+##                flag=1
+##    else:
+##        flag=0
+##    if(flag==1):
+##        print("Anagram string")
+##    else:
+##        print("Not Anagram string")
+##        
+##str1=input("First string:")
+##str2=input("Second string:")
+##anagram(str1,str2)
+
+#Second Method:
+##def anagram(str1,str2):
+##    if(sorted(str1)==sorted(str2)):
+##        print("Anagram string")     
+##str1=input("First string:")
+##str2=input("Second string:")
+##anagram(str1,str2)
+
+
