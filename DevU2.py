@@ -91,3 +91,23 @@
 ##str1=input("Enter the string:")
 ##vowel_del(str1)
 
+# A Python program to print all 
+# permutations using library function
+from itertools import permutations
+from itertools import combinations
+count=0
+str2=input("Enter string:")
+list1=list(str2)
+perm =permutations(list1)
+comb=combinations(list1,2)
+for i in perm:
+    count+=1
+    print (''.join(i))
+print("permutations count:",count)
+
+count=0
+for i in comb:
+    
+    count+=1
+    print (''.join(i))
+print("combinations count:",count)
